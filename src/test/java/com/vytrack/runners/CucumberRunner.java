@@ -12,7 +12,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue ="com/vytrack/step_definitions",
-        features = "src/test/resources/features"
+        features = "src/test/resources/features",
+        dryRun = true,
+        strict = true
 )
 public class CucumberRunner {
 
