@@ -33,6 +33,12 @@ public void user_is_on_the_landing_page() {
         loginPage.login("salesmanager110","UserUser123");
 
     }
+    @When("user logs is as a sales manager")
+    public void user_logs_is_as_a_store_manager() {
+        System.out.println("Login as store manager");
+        loginPage.login("storemanager85","UserUser123");
+
+    }
     @Then("user should verify that title is a Dashboard")
     public void user_should_verify_that_title_is_a_Dashboard() {
         System.out.println("Verify that title is a Dashboard");
